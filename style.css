@@ -1,0 +1,129 @@
+:root {
+    --blue-header: #cceeff;
+    --blue-border: #99ddff;
+    --orange-header: #f7cca0;
+    --green-header: #ccffcc;  
+    --text-main: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: var(--text-main);
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.section-resultats {
+    margin-bottom: 30px;
+}
+
+.section-resultats h1 {
+    text-align: center;
+    color: #005580;
+    font-size: 1.5rem;
+}
+
+.ue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.ue-box {
+    background-color: var(--blue-header);
+    border: 1px solid var(--blue-border);
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ue-name { font-weight: bold; font-size: 0.9rem; }
+.ue-average { font-weight: bold; font-size: 1.4rem; color: #004466; }
+
+
+.bulletin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.bulletin-table th {
+    background: #eee;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+}
+
+.bulletin-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.row-resource {
+    background-color: var(--orange-header);
+    font-weight: bold;
+    border-top: 2px solid #fff;
+}
+
+.row-sae {
+    background-color: var(--green-header);
+    font-weight: bold;
+    border-top: 2px solid #fff;
+}
+
+
+.row-sub {
+    background-color: #fff;
+}
+
+.sub-label {
+    padding-left: 30px; 
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.col-coef { text-align: center; width: 60px; font-size: 0.85rem; color: #666; }
+.col-note { text-align: right; width: 100px; }
+
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #005580;
+    background-color: #f0f8ff;
+}
+
+.moyenne-matiere {
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-reset {
+    background: #ff6666;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+}

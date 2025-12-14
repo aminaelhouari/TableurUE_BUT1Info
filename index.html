@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Bulletin BUT - Simulateur</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="main-container">
+
+    <header class="section-resultats">
+        <h1>Mes Moyennes d'UE (Estimations)</h1>
+        <div class="ue-grid" id="ue-container">
+            </div>
+    </header>
+
+    <hr class="separator">
+
+    <div class="section-saisie">
+        <div class="header-saisie">
+            <h2>Saisie des notes</h2>
+            <p>Remplace les tirets par tes notes. Le calcul se fait automatiquement.</p>
+            <button onclick="resetAll()" class="btn-reset">Tout effacer</button>
+        </div>
+
+        <table class="bulletin-table">
+            <thead>
+                <tr>
+                    <th>Intitulé de l'évaluation</th>
+                    <th class="col-coef">Coef.</th>
+                    <th class="col-note">Note / 20</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
