@@ -39,7 +39,7 @@ const matieresData = [
         evals: [
             { nom: "Interro Logique", coef: 1, note: null },
             { nom: "DST Logique", coef: 3, note: null },
-            { nom: "Interro Num. & Arith.", coef: null, note: null },
+            { nom: "Interro Num. & Arith.", coef: 2, note: null },
             { nom: "DST Final", coef: 6, note: null }
         ]
     },
